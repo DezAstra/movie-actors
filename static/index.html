@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wb&Russ 10 вар. Баринов</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Киноактёры</h1>
+
+    <!-- Фильтры -->
+    <div class="filters">
+        <div>
+            <label for="search">Поиск по имени:</label>
+            <input type="text" id="search" placeholder="Введите имя актёра...">
+        </div>
+        <div>
+            <label for="films-min">Кол-во фильмов:</label>
+            <input type="number" id="films-min" placeholder="Минимум" step="1">
+            <label for="films-max"></label>
+            <input type="number" id="films-max" placeholder="Максимум" step="1">
+        </div>
+        <div>
+            <label for="earnings-min">Гонорары (млн. долларов):</label>
+            <input type="number" id="earnings-min" placeholder="Минимум" step="50">
+            <label for="earnings-max"></label>
+            <input type="number" id="earnings-max" placeholder="Максимум" step="50">
+        </div>
+        <div>
+            <label for="nationality">Национальность:</label>
+            <select id="nationality">
+                <!-- JS -->
+            </select>
+        </div>
+    </div>
+
+    <!-- Список актёров -->
+    <div id="actor-list" class="actor-list">
+        <!-- актёры -->
+    </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
